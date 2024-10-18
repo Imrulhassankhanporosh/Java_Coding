@@ -1,5 +1,6 @@
 package org.example;
 
+
 class Car {
 
     String color;
