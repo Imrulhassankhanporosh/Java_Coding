@@ -1,6 +1,6 @@
 package OOP;
 
-public class MethodOverloading {
+class MethodOverloading {
 
     // Method to search by title
     public void searchBook(String title) {
