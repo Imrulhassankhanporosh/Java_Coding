@@ -9,6 +9,7 @@ public class InterfaceMain{
         obj1.run();
         obj1.color();
         obj1.sound();
+        obj1.displayType(); //can call default/static method from instance
         System.out.println("name : "+obj1.name);
     }
 

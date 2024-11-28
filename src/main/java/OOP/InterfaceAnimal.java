@@ -4,6 +4,11 @@ interface InterfaceAnimal {
     void run();
 
     String name = "public static final value";
+
+    // can have Default/static method (has a body) in java 8+
+    default void displayType() {
+        System.out.println("This is a vehicle.");
+    }
 }
 
 interface InterfaceDog{

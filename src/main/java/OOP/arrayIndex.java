@@ -9,7 +9,7 @@ public class arrayIndex {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Error: Array index out of bounds.");
         } catch (ArithmeticException e) {
-            System.out.println("Error: Arithmetic exception occurred.");
+            System.out.println("Error: Arithmetic exception occurred."+e.getMessage());
         } finally {
             System.out.println("Finally block executed.");
         }
