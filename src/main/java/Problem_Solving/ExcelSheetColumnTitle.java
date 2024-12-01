@@ -9,13 +9,13 @@ public class ExcelSheetColumnTitle {
         StringBuilder result = new StringBuilder();
 
         while(columnNumber>0){
-            columnNumber--;
-            char letter= (char) ('A'+columnNumber%26);
-            result.append(letter);
-            columnNumber=columnNumber/26;
+            columnNumber--; // Adjust for 1-based indexing
+            char letter= (char) ('A'+columnNumber%26); // Get the current letter
+            result.append(letter); // Append the letter
+            columnNumber=columnNumber/26; // Move to the next "digit"
 
         }
-        return result.reverse().toString();
+        return result.reverse().toString(); // Reverse to get the correct order
 
     }
 
